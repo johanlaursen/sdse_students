@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
+
 
 public class CityCSVProcessor {
 	
@@ -32,7 +34,7 @@ public class CityCSVProcessor {
 				
 				if (log.get(city) == null){
 					List<CityRecord> newcity = new ArrayList<CityRecord>();
-					newcity.add(cr)
+					newcity.add(cr);
 					log.put(city, newcity );
 					
 				}
@@ -45,10 +47,36 @@ public class CityCSVProcessor {
 				
 				//TODO: Extend the program to process entries!
 			}
+			cityprint(log);
+			
 		} catch (Exception e) {
 			System.err.println("An error occurred:");
 			e.printStackTrace();
 		}
+	}
+	
+	private void cityprint(Map<String,List<CityRecord>> log) {
+		for (Entry<String, List<CityRecord>> entry : log.entrySet()) {
+			int numEntries, minYear, maxYear, total;
+			String city;
+			numEntries = 0;
+			total = 0;
+			city = entry.getKey();
+			minYear = entry.getValue().get(0).year;
+			maxYear = entry.getValue().get(0).year;
+			
+			
+			for (CityRecord record : log.get(city)) {
+				numEntries += 1;
+				total += record.population;
+				if (record.year < minYear) {minYear = record.year;}
+				else if (record.year > maxYear) {maxYear = record.year;}
+				
+				
+			}
+			System.out.println("Average population of " + city + "("+ minYear+"-"+maxYear+"; "+ numEntries+ " entries): " + total/numEntries);
+		
+	}
 	}
 	
 	private String cleanRawValue(String rawValue) {
