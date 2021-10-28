@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Exercises/Java4/CSVProcessor/src"/>
+	<classpathentry kind="src" path="Project 1/Phase 1/Code/Phase 1/src"/>
+	<classpathentry kind="src" path="Project 1/Phase 2/Code/Phase 2/src"/>
+	<classpathentry kind="src" path="Project 2/Portunus - Controller/src"/>
+	<classpathentry kind="src" path="Project 2/Portunus - Core/src"/>
+	<classpathentry kind="src" path="Project 2/Portunus - Util - Finder/src"/>
+	<classpathentry kind="src" path="Project 2/Portunus - Util - IO/src"/>
+	<classpathentry kind="src" path="Project 2/Portunus - Util - PasswordGenerator/src"/>
+	<classpathentry kind="src" path="Project 2/Portunus - View/src"/>
+	<classpathentry kind="src" path="Project 2/Portunus - View/srcJavaFX"/>
+	<classpathentry kind="src" path="Project 2/Portunus/src"/>
+	<classpathentry kind="lib" path="Project 1/Phase 1/Code/Phase 1/lib/commons-csv-1.7/commons-csv-1.7-sources.jar"/>
+	<classpathentry kind="lib" path="Project 1/Phase 1/Code/Phase 1/lib/commons-csv-1.7/commons-csv-1.7.jar"/>
+	<classpathentry kind="lib" path="Project 1/Phase 2/Code/Phase 2/lib/commons-csv-1.7/commons-csv-1.7-sources.jar"/>
+	<classpathentry kind="lib" path="Project 1/Phase 2/Code/Phase 2/lib/commons-csv-1.7/commons-csv-1.7.jar"/>
+	<classpathentry kind="lib" path="Project 1/Phase 2/Code/Phase 2/lib/org.nypl.journalsystem.core_1.0.0.jar"/>
+	<classpathentry kind="lib" path="Project 1/Phase 2/Code/Phase 2/lib/org.nypl.journalsystem.hindex_0.8.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
